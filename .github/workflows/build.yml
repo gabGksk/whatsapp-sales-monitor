@@ -7,6 +7,10 @@ jobs:
   build:
     runs-on: windows-latest
 
+    defaults:
+      run:
+        working-directory: whatsapp-sales-monitor
+
     steps:
       - uses: actions/checkout@v4
 
@@ -20,4 +24,4 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: app-build
-          path: dist
+          path: whatsapp-sales-monitor/dist
