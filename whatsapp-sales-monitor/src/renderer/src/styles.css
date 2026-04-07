@@ -1,0 +1,175 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #0e1420;
+  color: #eaf0f8;
+}
+
+.dashboard {
+  min-height: 100vh;
+  padding: 1.5rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.dashboard-header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.dashboard-header p {
+  margin: 0.35rem 0 0;
+  color: #9fb0c6;
+}
+
+.panel {
+  background: #151f2d;
+  border: 1px solid #27384f;
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.error {
+  border-color: #8a3940;
+  color: #ffb4ba;
+}
+
+.filters-bar {
+  display: flex;
+  gap: 1rem;
+  align-items: end;
+}
+
+.filters-bar label {
+  display: grid;
+  gap: 0.25rem;
+  font-size: 0.9rem;
+}
+
+input,
+select {
+  background: #0f1724;
+  border: 1px solid #314761;
+  color: #eaf0f8;
+  border-radius: 8px;
+  padding: 0.45rem 0.6rem;
+}
+
+.kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+.kpi-card h3 {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #99acc3;
+}
+
+.kpi-card p {
+  margin: 0.4rem 0 0;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 1rem;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.data-table th,
+.data-table td {
+  text-align: left;
+  padding: 0.5rem 0.35rem;
+  border-bottom: 1px solid #23344a;
+  vertical-align: top;
+}
+
+.bars,
+.funnel {
+  display: grid;
+  gap: 0.55rem;
+}
+
+.bar-row {
+  display: grid;
+  grid-template-columns: 160px 1fr 90px;
+  gap: 0.6rem;
+  align-items: center;
+}
+
+.bar-label,
+.bar-value {
+  font-size: 0.85rem;
+}
+
+.bar-track {
+  height: 14px;
+  background: #0f1724;
+  border-radius: 999px;
+  border: 1px solid #23344a;
+}
+
+.bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #2e7de9, #41b3ff);
+  border-radius: 999px;
+}
+
+.funnel-stage {
+  display: grid;
+  gap: 0.2rem;
+}
+
+.funnel-bar {
+  height: 20px;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #2f8cff, #84c2ff);
+}
+
+.funnel-label {
+  font-size: 0.85rem;
+  text-transform: capitalize;
+}
+
+.priority {
+  display: inline-block;
+  border-radius: 999px;
+  padding: 0.15rem 0.5rem;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+
+.priority-low {
+  background: #2f3f55;
+}
+
+.priority-medium {
+  background: #2e5b95;
+}
+
+.priority-high {
+  background: #8a5d1f;
+}
+
+.priority-critical {
+  background: #8b2f3d;
+}
+
+@media (max-width: 1200px) {
+  .kpi-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+}
